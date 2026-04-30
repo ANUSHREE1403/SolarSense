@@ -1,10 +1,12 @@
 # SolarSense
 
-UK-first solar feasibility calculator focused on one question: **is solar worth it for this home?**
+Solar feasibility calculator focused on one question: **is solar worth it for this home?**
+
+Currently supports UK postcodes only; support for more countries is coming soon.
 
 ## What It Does
 
-- Resolves postcode to coordinates (`Postcodes.io`) with NI fallback (`Nominatim`)
+- Resolves postcode to coordinates with geocoder fallback
 - Pulls location-specific yield from `PVGIS`
 - Estimates rooftop system size from roof area/house type
 - Models 10-year outcomes: generation, bill savings, export income, net result
@@ -21,7 +23,7 @@ Most calculators either stop at technical sizing or show very basic savings. I b
 - 10-year horizon with 0.5% annual panel degradation
 - Usable roof factor + cap to avoid oversized domestic systems
 - Size-based install cost curve
-- Regional cost premium logic for London/SE
+- Regional install-cost multiplier logic
 - Optional electricity price inflation
 
 ## Quickstart
