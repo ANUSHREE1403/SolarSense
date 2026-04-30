@@ -1,22 +1,33 @@
 # SolarSense
 
-Solar feasibility calculator focused on one question: **is solar worth it for this home?**
+A simple, data-driven tool to estimate whether installing solar is financially worth it for a home.
 
 Currently supports UK postcodes only; support for more countries is coming soon.
 
 ## What It Does
 
-- Resolves postcode to coordinates with geocoder fallback
-- Pulls location-specific yield from `PVGIS`
-- Estimates rooftop system size from roof area/house type
-- Models 10-year outcomes: generation, bill savings, export income, net result
-- Supports conservative/expected/optimistic scenarios
-- Exposes both CLI and Flask API
-- Includes unit tests and benchmark suite
+- Takes minimal inputs (postcode, house type, usage, optional roof area)
+- Resolves location and fetches solar yield from `PVGIS`
+- Converts roof assumptions into estimated system size
+- Models 10-year financial outcomes including generation, savings, export income, and net return
+- Generates conservative / expected / optimistic scenarios
+- Exposes both CLI and Flask API for easy integration
+- Validates model quality with unit tests and benchmark cases
 
 ## Why I Built It
 
-Most calculators either stop at technical sizing or show very basic savings. I built SolarSense as a practical, data-backed decision tool with minimal inputs and clear output.
+Most solar calculators either focus only on technical sizing or provide basic savings estimates. They do not clearly answer whether solar is actually worth the investment.
+
+I built SolarSense to solve this gap by combining location-based data, realistic assumptions, and financial modeling into a simple decision tool with minimal inputs and clear outputs.
+
+## Example Output
+
+```text
+System size: 5.85 kWp
+Annual generation: ~5,600 kWh
+10-year net result: +GBP 2,300
+Payback period: ~8 years
+```
 
 ## Core Assumptions
 
