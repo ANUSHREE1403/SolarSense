@@ -1,0 +1,85 @@
+{
+  "cases": [
+    {
+      "id": "cardiff_semi",
+      "label": "Cardiff - semi-detached",
+      "postcode": "CF10 1EP",
+      "house_type": "semi",
+      "annual_usage_kwh": 3500,
+      "roof_area_m2": 50,
+      "expect": {
+        "yield_kwh_per_kwp_min": 950,
+        "yield_kwh_per_kwp_max": 990,
+        "system_kwp_min": 5.0,
+        "system_kwp_max": 7.0,
+        "install_cost_min": 9000,
+        "install_cost_max": 11000
+      }
+    },
+    {
+      "id": "london_terrace",
+      "label": "London - terraced",
+      "postcode": "SE1 7PB",
+      "house_type": "terrace",
+      "annual_usage_kwh": 3200,
+      "expect": {
+        "yield_kwh_per_kwp_min": 940,
+        "yield_kwh_per_kwp_max": 1050,
+        "system_kwp_min": 3.2,
+        "system_kwp_max": 4.8,
+        "install_cost_min": 7000,
+        "install_cost_max": 9800
+      }
+    },
+    {
+      "id": "edinburgh_detached",
+      "label": "Edinburgh - detached",
+      "postcode": "EH1 1YZ",
+      "house_type": "detached",
+      "annual_usage_kwh": 4200,
+      "expect": {
+        "yield_kwh_per_kwp_min": 850,
+        "yield_kwh_per_kwp_max": 920,
+        "system_kwp_min": 6.0,
+        "system_kwp_max": 8.0,
+        "install_cost_min": 9000,
+        "install_cost_max": 13000
+      }
+    },
+    {
+      "id": "truro_bungalow",
+      "label": "Truro, Cornwall - bungalow",
+      "postcode": "TR1 1AA",
+      "house_type": "detached",
+      "annual_usage_kwh": 4000,
+      "expect": {
+        "yield_kwh_per_kwp_min": 980,
+        "yield_kwh_per_kwp_max": 1100,
+        "system_kwp_min": 6.0,
+        "system_kwp_max": 8.0
+      }
+    },
+    {
+      "id": "manchester_flat",
+      "label": "Manchester - flat",
+      "postcode": "M1 1AE",
+      "house_type": "flat",
+      "annual_usage_kwh": 2500,
+      "expect": {
+        "yield_kwh_per_kwp_min": 820,
+        "yield_kwh_per_kwp_max": 980
+      }
+    },
+    {
+      "id": "belfast_semi",
+      "label": "Belfast - semi-detached",
+      "postcode": "BT1 1AA",
+      "house_type": "semi",
+      "annual_usage_kwh": 3200,
+      "expect": {
+        "yield_kwh_per_kwp_min": 840,
+        "yield_kwh_per_kwp_max": 940
+      }
+    }
+  ]
+}
